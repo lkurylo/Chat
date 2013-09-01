@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPChat.Domain", "FPChat.Domain\FPChat.Domain.csproj", "{1B840C6D-BFF8-45B2-97DB-9EB538CE3643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPChat.MvcClient", "FPChat.MvcClient\FPChat.MvcClient.csproj", "{BF8F59D6-522D-422D-B826-3937F7A5C3BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B840C6D-BFF8-45B2-97DB-9EB538CE3643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B840C6D-BFF8-45B2-97DB-9EB538CE3643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B840C6D-BFF8-45B2-97DB-9EB538CE3643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B840C6D-BFF8-45B2-97DB-9EB538CE3643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF8F59D6-522D-422D-B826-3937F7A5C3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF8F59D6-522D-422D-B826-3937F7A5C3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF8F59D6-522D-422D-B826-3937F7A5C3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF8F59D6-522D-422D-B826-3937F7A5C3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div id="chatContainer" style="display: table; width: 100%;">
+    <div style="display: table-row;">
+        <div style="display: table-cell;">
+            <div style="display: table; width: 100%;">
+                <div style="display: table-row;">
+                    <div style="display: table-cell;">
+                        <fieldset style="height: 430px; padding-bottom: 13px;">
+                            <legend>Messages</legend>
+                            <textarea id="taMessages" readonly="readonly" style="width: 100%; resize: none;"
+                                cols="20" rows="25"></textarea>
+                        </fieldset>
+                    </div>
+                </div>
+                <div style="display: table-row;">
+                    <div style="display: table-cell;">
+                        <input type="text" id="newMessage" style="padding: 0px; display: block;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: table-cell; padding-left: 15px; width: 250px; min-width: 150px">
+            <div style="display: table; width: 100%;">
+                <div style="display: table-row;">
+                    <div style="display: table-cell;">
+                        <fieldset style="height: 430px; padding-bottom: 13px;">
+                            <legend>Users</legend>
+                            <ul id="usersList" style="list-style-type: none; width: 100%;">
+                                @{Html.RenderAction("GetLoggedUsers", "Users");}
+                            </ul>
+                        </fieldset>
+                    </div>
+                </div>
+                <div style="display: table-row;">
+                    <div style="display: table-cell;">
+                        <button id="sendMessage" title="Send a message" style="width: 50px;">
+                            Send
+                        </button>
+                        <button id="clearMessages" title="Clear messages" style="width: 150px;">
+                            Clear chat window
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pmMessageBox">
+</div>
+<script type="text/javascript">
+    (function ()
+    {
+        FPChat.MessagesAndUsers.init();
+    })();
+</script>

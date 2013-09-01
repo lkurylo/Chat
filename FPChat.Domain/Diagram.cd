@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FPChat.Domain.Services.Concrete.MessagesService" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAABQAgA=</HashCode>
+      <FileName>Services\Concrete\MessagesService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FPChat.Domain.Services.Concrete.UsersService" Collapsed="true">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAQAAgABAAAAAAAAAAwAAQAAAAAAAAA=</HashCode>
+      <FileName>Services\Concrete\UserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

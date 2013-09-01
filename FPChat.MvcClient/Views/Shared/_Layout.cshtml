@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/Libraries/jquery-1.6.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Libraries/modernizr-1.7.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Libraries/jquery-ui-1.8.14.min.js")" type="text/javascript"></script>
+    <link href="../../HttpHandlers/CssHandler.ashx?file=Content/FPChat.css" rel="stylesheet"
+        type="text/css" />
+    <link href="../../HttpHandlers/CssHandler.ashx?file=Content/start/jquery-ui-1.8.12.custom.css"
+        rel="stylesheet" type="text/css" />
+    <script src="../../HttpHandlers/JsHandler.ashx?file=Scripts/Custom/options.js" type="text/javascript"></script>
+    <script src="../../HttpHandlers/JsHandler.ashx?file=Scripts/Custom/MessagesAndUsers.js"
+        type="text/javascript"></script>
+</head>
+<body onunload="FPChat.MainWindow.unloadPageHandler()">
+    <div class="page">
+        <header>
+            <nav>
+<h1>Simple FPChat</h1>
+            </nav>
+            @if (HttpContext.Current.User.Identity.IsAuthenticated)
+            { 
+           <div id="loggedInfo" style="width: 250px;float:right;text-align:center;">Logged as @HttpContext.Current.User.Identity.Name @Html.ActionLink("LogOut", "LogOut",  "Users" ) 
+          @* @using (Html.BeginForm("LogOut", "Users"))
+           {
+                                               
+                                <input type="submit" id="btnLogOut" />
+           }*@
+                                            </div>
+            }
+
+        </header>
+        <section id="main">
+            @RenderBody()
+        </section>
+        <footer>
+        </footer>
+    </div>
+    <script src="../../HttpHandlers/JsHandler.ashx?file=Scripts/Custom/FPChat.js" type="text/javascript"></script>
+    <script src="../../HttpHandlers/JsHandler.ashx?file=Scripts/Custom/LoginPage.js"
+        type="text/javascript"></script>
+    <script src="../../HttpHandlers/JsHandler.ashx?file=Scripts/Custom/PrivateMessageBox.js"
+        type="text/javascript"></script>
+    <script src="../../HttpHandlers/JsHandler.ashx?file=Scripts/Custom/BrowsersHacks.js"
+        type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿@model FPChat.MvcClient.Models.LoggedUsersListModel
+@foreach (var singleItem in @Model.Users)
+{
+    <text>
+        @if (singleItem == HttpContext.Current.User.Identity.Name)
+        {
+            <li style="color:Orange;">@singleItem</li>
+        }
+        else
+        {
+            <li> @*
+            this link is for opening a private message box with each user.
+            unfortunatelly I haven't enought time to fully implement it, so 
+            this funcionality is hidden
+            <a href="#" style="text-decoration: none; color: Black;"></a>*@ @singleItem</li>
+        }
+    </text>
+}

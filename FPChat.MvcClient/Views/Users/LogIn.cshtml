@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "LogIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+    LogIn</h2>
+<div id="loginExists" style="margin: 0 auto; text-align: center; color: Red;">
+</div>
+<div id="logFormContainer" style="margin: 0 auto; width: 250px;">
+    <div style="display: table; width: 100%;">
+        <div style="display: table-row;">
+            <div style="display: table-cell; text-align: center;">
+                <span>Insert a login:</span>
+            </div>
+        </div>
+        <div style="display: table-row">
+            <div style="display: table-cell;">
+                <input type="text" id="txtLogin" style="width: 250px; padding: 0px;" tabindex="1" />
+            </div>
+        </div>
+        <div style="display: table-row">
+            <div style="display: table-cell;">
+                <button id="selectLogin" style="width: 250px; padding: 0px;" tabindex="2">
+                    Go
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
